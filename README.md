@@ -1,7 +1,5 @@
 # heroku-seoserver
 
------
-
 Phantom JS server used to proxy bot requests
 
 e.g.
