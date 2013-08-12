@@ -2,6 +2,10 @@
   "name": "heroku-seoserver",
   "version": "0.0.2",
   "description": "Node and Phantom JS server used to proxy bot requests.",
+  "main": "lib/seoserver",
+  "bin": {
+    "seoserver": "./bin/seoserver.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

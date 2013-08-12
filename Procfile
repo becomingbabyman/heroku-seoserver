@@ -1,1 +1,1 @@
-web: node seoserver.js $PORT $CLIENT_HOST
+web: node lib/seoserver.js $PORT $CLIENT_HOST
