@@ -4,7 +4,7 @@ Phantom JS server used to proxy bot requests
 
 e.g. `curl --header "x-forwarded-host: localhost:3000" http://localhost:4000/home`
 
-will return the full HTML of /home page after Angular has populated the templates.
+will return the full HTML of /home page after your javascript has updated the DOM.
 
 ### heroku config
 
