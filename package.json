@@ -1,0 +1,19 @@
+{
+  "name": "heroku-seoserver",
+  "version": "0.0.2",
+  "description": "Node and Phantom JS server used to proxy bot requests.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git@github.com:smothers/heroku-seoserver.git",
+  "author": "smothers",
+  "license": "BSD",
+  "readmeFilename": "README",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "express": "3.x"
+  }
+}
