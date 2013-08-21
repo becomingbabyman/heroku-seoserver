@@ -11,7 +11,7 @@
   },
   "repository": "git@github.com:smothers/heroku-seoserver.git",
   "author": "smothers",
-  "license": "BSD",
+  "license": "MIT",
   "readmeFilename": "README",
   "engines": {
     "node": "0.10.x",

@@ -16,18 +16,24 @@ This will return the full HTML of `/home` page after your javascript has updated
 ## Installation
 
 1. Fork and clone the repository. heroku-seoserver.herokuapp.com is just an example running on one free dyno. If you want to handle any load you will have to create and scale your own server. 
+
 2. `cd` into the repo and create the Heroku app 
 
-	$ heroku apps:create example
+	```
+	$ heroku apps:create my-heroku-seoserver
+	```
 
 3. Update the config vars to support multiple buildpacks, and the phantomjs path
 
+	```
 	$ heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git PATH=vendor/phantomjs/bin
+	```
 
 4. Push the server to Heroku
 
+	```
 	$ git push heroku master:master
-
+	```
 
 ## Adding to an AngularJS project
 heroku-seoserver is compatible with the [angular-seo module](https://github.com/steeve/angular-seo). Add it to you app and trigger it whenever a page is fully loaded.
@@ -43,9 +49,9 @@ $rootScope.$on '$routeChangeSuccess', (event, current, previous) ->
 
 
 ## Routing bots in Rails on Heroku
-The easiest, albeit resource intensive solution, seems to be to use the Rails router as a proxy to seoserver when the user agent is a bot.
+The easiest, albeit resource intensive solution, seems to be to use the Rails router as a proxy to heroku-seoserver when the user agent is a bot.
 
-This can cause serious problems for small apps becuase it forces your Rails app to serve 2 requests. First the initial request from the bot, and second the request from heroku-seoserver. [Liberal caching](https://github.com/smothers/heroku-seoserver#caching) is a good solution, but it's not great.
+This can cause serious problems for small apps becuase it forces your Rails app to serve 2 requests for every page. First the initial request from the bot, and second the request from heroku-seoserver. [Liberal caching](https://github.com/smothers/heroku-seoserver#caching) is a good solution, but it's not great. (pull requests are very welcome)
 
 #### Routes
 
