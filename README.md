@@ -8,7 +8,7 @@ Try it:
 
 	$ curl --header "x-forwarded-host: positivespace.io" http://heroku-seoserver.herokuapp.com/christopher
 
-This will return the full HTML of `/home` page after your javascript has updated the DOM and 10 seconds have passed.
+This will return the full HTML of `/christopher` page after your javascript has updated the DOM and 10 seconds have passed.
 
 (Optionally) You can create an event called `__htmlReady__` and trigger it from within your app when the page is loaded. heroku-seoserver will watch for this event and return immediately rather than wait for the entire 10 seconds to pass.
 
